@@ -1,9 +1,3 @@
-// variables
-$red: #e41d1b;
-$light-gray: #e9e9e9;
-$gray: #888888;
-$dark: #3a3a3a;
-
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -14,7 +8,9 @@ $dark: #3a3a3a;
 }
 
 * {
+  color: $dark;
   margin: 0;
   padding: 0;
   list-style: none;
+  box-sizing: border-box;
 }

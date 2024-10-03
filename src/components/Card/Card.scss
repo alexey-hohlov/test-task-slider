@@ -1,0 +1,116 @@
+.card {
+  margin-bottom: 15px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+
+  &__photo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__info {
+    background: $light-gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    border-radius: 10px;
+
+    &-details {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      &-name {
+        font-weight: 500;
+        font-size: 18px;
+      }
+
+      &-rating {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 12px;
+      }
+
+      &-category {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+    }
+
+    &-controls {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      &-price {
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+        font-size: 26px;
+
+        span {
+          font-size: 20px;
+          color: $gray;
+          text-decoration: line-through;
+        }
+      }
+
+      &-buttons {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+        > * {
+          flex-grow: 1;
+        }
+
+        &-cart-button {
+          &.button {
+            background: $red;
+            color: white;
+            border: none;
+          }
+        }
+
+        &-buy-button {
+          &.button {
+            background: transparent;
+            border: 1px solid $gray;
+          }
+        }
+
+        svg {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    &__info {
+      padding: 10px;
+      &-controls {
+        &-buttons {
+          .counter {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

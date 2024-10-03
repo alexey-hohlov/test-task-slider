@@ -1,0 +1,34 @@
+.counter {
+  background: white;
+  border-radius: 4px;
+  height: 100%;
+  font-weight: 500;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  user-select: none;
+
+  > * {
+    flex-grow: 1;
+  }
+
+  button {
+    width: 30px;
+    border: none;
+    background: transparent;
+    user-select: none;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: center;
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+
+  span {
+    text-align: center;
+    max-width: 40px;
+    width: 100%;
+  }
+}
