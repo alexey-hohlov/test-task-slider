@@ -10,4 +10,4 @@ yarn install
 yarn dev
 ```
 
-Go to [http://localhost:3000](http://localhost:3000) to see result
+Go to [http://localhost:5173](http://localhost:5173) to see result
